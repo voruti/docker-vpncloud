@@ -7,7 +7,10 @@ services:
     restart: unless-stopped
 
     volumes:
-      - "./data/vpncloud.net:/etc/vpncloud/vpncloud.net:rw"
+      - "./data:/etc/vpncloud:rw"
+
+    environment:
+      CONFIG_FILE: "vpncloud.net"
 
     network_mode: host
 
