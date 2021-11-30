@@ -3,12 +3,6 @@ FROM debian
 RUN apt-get update && \
     apt-get install --no-install-recommends --no-install-suggests -y \
     wget \
-    tar \
-    host \
-    net-tools \
-    git \
-    build-essential \
-    cargo \
     ca-certificates \
     gnupg && \
     # vpncloud install:
